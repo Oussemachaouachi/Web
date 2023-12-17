@@ -1,41 +1,519 @@
 
 <!DOCTYPE html>
-<html lang="fr"> 
-<head> 
-    <link rel="stylesheet" href ="exemple.css" >
+
+<html lang="en">
+
+<head>
+
     <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/30f2a4861a.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+
 </head>
+
 <body>
-    <header class="objet">
-        <h1>Chaouachi Oussema</h1>
-        <nav>
-            <ul>
-                <li>Spécialité: Informatique</li>
-                <li>Etablissement: Esprit</li>
-				<li>Age: 26 ans</li>
-                <li><a href="#">Contactez-moi</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="objet">
-            <article class="objet">
-                <h3><a href="parcours.html">Mon parcours académique</a></h3>
-            </article>
-			<article class="objet">
-                <h3><a href="projets.html">Mes anciens projets</a></h3>
-            </article>
-            <article class="objet">
-                <h3><a href="expériences.html">Mes expériences</a></h3>
-            </article>
-        </section>
-    </main>
+    <!-- MENU - HEADER -->
 
-    <footer>
-        <p><a href="https://www.facebook.com/oussama.ch.ca">Facebook</p>
-    </footer>
+    <div class="box-header">
+
+        <header class="menu-principal">
+
+            <div class="Miel">
+
+                <a href="#">Chaouachi_O</a>
+
+            </div>
+
+            <nav id="nav">
+
+                <ul>
+
+                    <li><a href="#home" onclick="select()" >HOME</a></li>
+
+                    <li><a href="#about-me" onclick="select()">ABOUT ME</a></li>
+
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+
+                    <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-responsive" onclick="showHideMenu()"> 
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </header>
+
+    </div>
+
+    <!-- SECTION HOME -->
+
+    <section id="home" class="home">
+
+        <div class="main-container">
+
+            <div class="box-img">
+
+                <img src="image.jpg" alt="my photo">
+
+            </div>
+
+            <h1>Chaouachi Oussema</h1>
+
+            <h2>Software Engineer</h2>
+
+            <div class="social-media">
+
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION ABOUT ME -->
+
+    <section class="about-me" id="about-me">
+
+        <div class="aboutMeContent">
+
+            <h2>About Me</h2>
+
+            <p><span>Hello, I'm Oussema,</span> a software engineer hailing from the vibrant country of Tunisia. 
+                My academic journey began with a strong foundation in mathematics, having earned my Baccalaureate with a focus on this discipline. 
+                Intrigued by the intersection of technology and problem-solving, I transitioned to the military academy, 
+                where I further honed my analytical skills and gained a disciplined approach to challenges.
+                 Now, as a software engineer, I leverage both my mathematical background and the structured mindset cultivated during my military studies. 
+                 I am dedicated to crafting efficient and robust software solutions. My journey reflects not only my academic pursuits but also a commitment 
+                to excellence and adaptability. I look forward to contributing my diverse skill set to innovative projects and collaborative endeavors.</p>
+
+            <!-- Personal Information: row -->
+
+            <div class="personalInfo">  
+
+                <!-- Personal Information -->
+
+                <!-- info-box: col -->
+                <div class="info-box">
+
+                    <h3>Personal Information</h3>
+
+                    <ul>
+
+                        <li>
+                            <strong>Birthday</strong>
+                            14-08-1997
+                        </li>
+
+                        <li>
+                            <strong>Phone</strong>
+                            216-28882771
+                        </li>
+
+                        <li>
+                            <strong>Email</strong>
+                            Oussema.Chaouachi@esprit.com
+                        </li>
+
+                        <li>
+                            <strong>Address</strong>
+                            Manouba , Tunisie
+                        </li>
+
+                        <li>
+                            <strong>Position</strong>
+                            <span>FREELANCE</span> 
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Interests -->
+
+                <div class="info-box">
+
+                    <h3>Interests</h3>
+
+                    <div class="myInterests">
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEO GAMES</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELING</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-paint-brush"></i>
+                            <span>PAINT</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-hiking"></i>
+                            <span>SPORTS</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-car"></i>
+                            <span>CARS</span>
+
+                        </div>
+
+                        <div class="interest">
+
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>    
+
+        </div>
+
+    </section>
+
+    <!-- SECTION SKILLS -->
+
+    <section class="skills" id="skills">
+
+        <div class="skill-content">
+
+            <h2>Skills</h2>
+
+            <div class="row">
+
+                <!-- Technical Skills -->
+
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>75%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>93%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>82%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>75%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>74 %</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Professional Skills -->
+
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>80%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>80%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class ="skill">
+                        <span>Creation</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>67%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>73%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="skill-bar">
+
+                            <div class="progress">
+
+                                <span>92%</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION Carreer -->
+
+    <section class="curriculum" id="curriculum">
+
+        <div class="resume-content">
+            <h2>Carreer</h2>
+            <div class="row">
+                <div class="col left">
+                    <h3>Education</h3>
+                    <div class="item left">
+                        <h4>Baccalaureate in Mathematics</h4>
+                        <span class="university">high school Ibn Abi Dhiief Manouba </span>
+                        <span class="date">2015-2016</span>
+                        <p>Embarking on my academic journey, I earned my Baccalaureate in Mathematics in Tunisia. This foundational experience not only 
+                            sharpened my analytical and problem-solving skills but also instilled in me a deep appreciation for the beauty and precision inherent in mathematical concepts. 
+                            The pursuit of a mathematics-focused education laid the groundwork for my future academic and professional endeavors, providing a solid framework that I carry with me into every aspect of my life.</p>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left">
+                        <h4>Preparatory Course Certificate </h4>
+                        <span class="university">El Manar Preparatory Institute for Engineering Studies</span>
+                        <span class="date">2016 - 2018</span>
+                        <p>Attended the El Manar Preparatory Institute for Engineering Studies, where I undertook a comprehensive curriculum focusing on fundamental engineering subjects. Embracing rigorous coursework in mathematics, physics, and technical sciences, the program provided a robust foundation essential for successful entrance into engineering schools. Engaged in a dynamic academic environment that fostered critical thinking, problem-solving skills, and a strong grasp of engineering principles. The experience cultivated a deep passion for technical disciplines and prepared me effectively for advanced engineering studies</p>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left">
+                        <h4>Certfication</h4>
+                        <span class="university">University of Esprit</span>
+                        <span class="date">2023 - 2026</span>
+                        <p>
+Studying at ESPRIT as an IT engineer has been an enriching and dynamic experience. The curriculum offered a comprehensive blend of theoretical knowledge and hands-on practical application, allowing me to delve into various facets of information technology. From programming languages to network infrastructure and cybersecurity, the coursework provided a strong foundation in diverse IT fields.
+The vibrant academic environment, coupled with state-of-the-art facilities and engaging faculty, fostered a deep understanding of cutting-edge technologies. Collaborative projects and internships further honed my problem-solving skills and equipped me with real-world insights crucial for thriving in the dynamic landscape of IT engineering. ESPRIT not only provided an exceptional education but also instilled a passion for innovation and a solid professional ethos within me,
+preparing me to contribute meaningfully to the tech industry.</p>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <div class="item right">
+                        <img src="image3.jpeg" width="50%"></img>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="item right">
+
+                        <img src="image4.JFIF" width="50%"></img>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="item right">
+                        <img src="image5.png" width="50%"></img>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact" id="contact">
+    <div class="section-content">
+        <h2>CONTACT</h2>
+        <div class="row">
+            <!-- Form -->
+            <div class="col">
+                <input type="text" id="name" placeholder="Your Name">
+                <span id="nameError" class="error"></span>
+    
+                <input type="number" id="phoneNumber" placeholder="Phone Number">
+                <span id="phoneError" class="error"></span>
+    
+                <input type="email" id="email" placeholder="Email Address">
+                <span id="emailError" class="error"></span>
+    
+                <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <span id="messageError" class="error"></span>
+                <button onclick="validateForm()">
+                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            <!-- Map -->
+            <div class="col">
+                <img src="image6.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                             Manouba
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            Phone: +216 28882771
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                           E-mail Address: Oussema.Chaouachi@esprit.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <a href="#home" class="up">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="social-media">
+        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#skype"><i class="fa-brands fa-skype"></i></a>
+        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+
 </body>
+
 </html>
